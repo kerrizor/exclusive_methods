@@ -9,13 +9,16 @@ module ExclusiveMethods
     methods - superclass.methods - class_methods_from_modules
   end
 
-
   def instance_methods_from_modules
-    included_modules.map { |mod| mod.instance_methods }.flatten.uniq
+    methods_from_modules(:instance_methods)
   end
 
   def class_methods_from_modules
-    included_modules.map { |mod| mod.methods }.flatten.uniq
+    methods_from_modules(:methods)
+  end
+
+  def methods_from_modules(method_type)
+    included_modules.map(&method_type).flatten.uniq
   end
 end
 
