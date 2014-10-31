@@ -1,6 +1,6 @@
 # ExclusiveMethods
 
-TODO: Write a gem description
+Adds methods to a Ruby class that return methods that are exclusive to that class, and do not belong to its ancestors.
 
 ## Installation
 

@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ExclusiveMethods::VERSION
   spec.authors       = ["Kerri Miller"]
   spec.email         = ["kerrizor@kerrizor.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Adds methods to expose methods exclusive to a class.}
+  spec.description   = %q{Adds methods to a Ruby class that return methods that are exclusive to that class, and do not belong to its ancestors.}
+  spec.homepage      = "https://github.com/kerrizor/exclusive_methods"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
